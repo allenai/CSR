@@ -1,0 +1,13 @@
+{
+    "instance_id": 47,
+    "room_id": 22,
+    "num_steps": 250,
+    "render_instance_segmentation": false,
+    "visibility_distance": 1.5,
+    "debug": false,
+    "dump_dir": "./my_explore_cache_val",
+    "roomr_dir": "datasets/roomr/",
+    "roomr_meta_dir": "datasets/roomr_meta2",
+    "data_split": "val",
+    "exploration_model_path": "checkpoints/explorer_200.pt"
+}

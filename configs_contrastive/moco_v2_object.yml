@@ -1,0 +1,32 @@
+project_name: 'contrastive'
+experiment_name: 'moco_v2_object'
+data_path: 'datasets/edge_full'
+checkpoint_path: 'checkpoint_moco_v2_object'
+seed: 0
+pretrained: false
+lr: 0.1
+weight_decay: 0.0001
+backbone: 'resnet18'
+channel_width: 64
+in_channels: 5
+out_channels: 0
+num_classes: 0
+optimizer: 'SGD'
+scheduler: 'CosineAnnealingLR'
+batch_size: 64
+epochs: 100
+progress_bar_refresh_rate: 20
+gpus:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+early_stop: false
+accelerator: 'ddp'
+pretrain_path: ''
+train_object_representation: true
+queue_size: 65536
