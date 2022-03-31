@@ -19,15 +19,15 @@ Our repo additionally depends on [Detectron2](https://detectron2.readthedocs.io/
 
 
 ### Data and Checkpoints
-Datasets can be downloaded from [here](TODO).
-Checkpoints can be downloaded from [here](TODO).
+Datasets can be downloaded from [here](https://prior-datasets.s3.us-east-2.amazonaws.com/csr/datasets.tar.gz).
+Checkpoints can be downloaded from [here](https://prior-model-weights.s3.us-east-2.amazonaws.com/embodied-ai/csr/checkpoints.tar.gz).
 Make sure to extract in the root folder `/csr`
 
 ### Training node and edge representations
 We provide a checkpoint for at: `checkpoints/csr_scene.ckpt`.
 However, to train a continuous scene representation (CSR) from scratch, run the following:
 ```
-python train_csr.py --conf configs_constrastive/moco_v2_scene.yml
+python train_csr.py --conf configs_contrastive/moco_v2_scene.yml
 ```
 
 Note, `moco_v2_scene.yml` assumes an 8-gpu machine. To train with a different number of gpus, change the `gpus` field in `moco_v2_scene.yml`.
@@ -36,7 +36,7 @@ Note, `moco_v2_scene.yml` assumes an 8-gpu machine. To train with a different nu
 We provide a checkpoint at `checkpoints/csr_object.ckpt`.
 To train a model to match objects between trajectories from scratch, run the following:
 ```
-python train_csr.py --conf configs_constrastive/moco_v2_object.yml
+python train_csr.py --conf configs_contrastive/moco_v2_object.yml
 ```
 
 Note, `moco_v2_object.yml` assumes an 8-gpu machine. To train with a different number of gpus, change the `gpus` field in `moco_v2_object.yml`.
