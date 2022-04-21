@@ -1,7 +1,7 @@
 # Continuous Scene Representations for Embodied AI
 ![](figs/csr.jpg)
 
-This repo implements [Continuous Scene Representations for Embodied AI](TODO) by Samir Gadre, Kiana Ehsani, Shuran Song, and Roozbeh Mottaghi.
+This repo implements [Continuous Scene Representations for Embodied AI](https://arxiv.org/pdf/2203.17251.pdf) by Samir Gadre, Kiana Ehsani, Shuran Song, and Roozbeh Mottaghi.
 
 ## Abstract:
 
